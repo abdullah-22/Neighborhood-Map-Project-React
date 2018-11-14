@@ -105,6 +105,9 @@ const MyMap = withScriptjs(
 
 export default class Map extends Component {
   render() {
+    if(!MyMap) {
+      throw new Error ("Error: Could not load the map.")
+    }
     return (
       <MyMap
         {...this.props}

@@ -9,7 +9,7 @@ import "./ErrorBoundary.css";
 class ErrorBoundary extends Component {
   componentDidCatch(error, info) {
     this.props.updateGlobalState({ hasError: true });
-    console.log("Error: ", error);
+    console.log(error);
     console.log(info);
   }
 
@@ -21,11 +21,12 @@ class ErrorBoundary extends Component {
             <h1>Error: Could not load the components.</h1>
             <h2>Please refresh the page to try again.</h2>
             <h3>If the problem persists, contact the developer.</h3>
+            <p><i>(Check the developer console for error details)</i></p>
           </div>
         </div>
       );
     }
-    return null;
+    return this.props.children;
   }
 }
 

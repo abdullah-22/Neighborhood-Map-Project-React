@@ -2,7 +2,6 @@ li {
   list-style: none;
   margin-top: 1rem;
   cursor: pointer;
-  box-shadow: 1px 1px 10px 1px purple;
 }
 
 .list-item {
@@ -13,6 +12,13 @@ li {
   align-items: center;
   background-color: purple;
   color: white;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px 3px purple;
+}
+
+.list-item:focus,
+.list-item:hover {
+  background-color: #be01be;
 }
 
 .list-item img {

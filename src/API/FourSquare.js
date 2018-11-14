@@ -75,8 +75,8 @@ class Helper {
         return response.data;
       })
       .catch(error => {
-        alert(`Error: Couldn't get the data from the Foursquare.
-          See the developement console for the error details.`);
+        console.log("Error is in fetching response from FOURSQUARE in getResponse() in FourSquare.js")
+        console.log(error)
         return error;
       });
   }

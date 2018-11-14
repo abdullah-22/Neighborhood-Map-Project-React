@@ -13,7 +13,8 @@ export default class SideBar extends Component {
     super(props);
     this.state = {
       query: "",
-      activeVenues: []
+      activeVenues: [],
+      inputTabIndex: 2
     };
   }
 
@@ -62,7 +63,6 @@ export default class SideBar extends Component {
     this.props.updateGlobalState({ markers: activeMarkers });
   };
 
-
   render() {
     return (
       this.props.sideBarIsOpen && (
@@ -75,15 +75,22 @@ export default class SideBar extends Component {
                 placeholder="Filter by name"
                 onChange={this.handleInputChange}
                 onFocus={this.handleInputChange}
+                tabIndex="2"
               />
             </div>
             <VenueList
               {...this.props}
               venues={this.handleFilterVenues()}
               onListItemClick={this.props.onListItemClick}
+              inputTabIndex={this.state.inputTabIndex}
             />
             <div className="attribution">
-              <h3><b>DATA PROVIDED BY - <a href="https://developer.foursquare.com/" >FOURSQUARE</a></b></h3>
+              <h3>
+                <b>
+                  DATA PROVIDED BY -{" "}
+                  <a href="https://developer.foursquare.com/">FOURSQUARE</a>
+                </b>
+              </h3>
               <img
                 src={require("../Media/Images/powered-by-foursquare-blue.svg")}
                 alt="Powered by FOURSQUARE"

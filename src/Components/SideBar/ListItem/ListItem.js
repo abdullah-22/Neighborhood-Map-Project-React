@@ -9,8 +9,14 @@ export default class Listitem extends Component {
   render() {
     return (
       <React.Fragment>
-        <li onClick={() => this.props.onListItemClick(this.props)}>
-          <div className={"list-item"}>
+        <li role="presentation">
+          <div
+            className={"list-item"}
+            role="tab"
+            tabIndex={this.props.tabIndex}
+            onClick={() => this.props.onListItemClick(this.props)}
+            onKeyPress={() => this.props.onListItemClick(this.props)}
+          >
             {this.props.categories[0] && (
               /** Icon for category type of the venues; displays only on screen size larger than 768px */
               <img

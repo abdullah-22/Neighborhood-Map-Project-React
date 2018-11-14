@@ -57,7 +57,7 @@ export default class Hamburger extends Component {
 
   render() {
     return (
-      <div className="hamburger-container">
+      <div className="hamburger-container" tabIndex="1">
         <button
           className={
             this.state.isActive

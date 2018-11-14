@@ -78,10 +78,10 @@ class App extends Component {
       })
       .catch(error => {
         this.setState({ appHasError: true });
+        console.log("Error is in setting initial state in componentDidMount() in App.js")
         console.log(error);
       });
   };
-
   /**
    * Sets the isOpen property of all markers to false
    *
@@ -113,9 +113,14 @@ class App extends Component {
     const venue = this.state.venues.find(venue => venue.id === marker.id);
     FourSquareAPI.getVenueDetails(marker.id).then(res => {
       const newVenue = Object.assign(venue, res.response.venue);
-      this.setState({ venues: Object.assign(this.state.venues, newVenue) });
+      this.setState({ venues: Object.assign(this.state.venues, newVenue) })
       //console.log(newVenue);
     })
+    .catch(error => {
+      this.setState({ appHasError: true });
+      console.log("Error is in fetching the details of venues.")
+      console.log(error);
+    });
   };
 
   /**
@@ -153,7 +158,7 @@ class App extends Component {
           <ErrorBoundary
             hasError={this.state.appHasError}
             updateGlobalState={this.updateGlobalState}
-          />
+          >
           <Header
             sideBarStatus={this.state.sideBarIsOpen}
             updateGlobal={this.updateGlobalState}
@@ -173,6 +178,7 @@ class App extends Component {
                 markers={this.state.markers}
                 onMarkerClick={this.handleMarkerClick}
                 onInfoWindowClose={this.handleInfoWindowClose}
+                updateGlobalState={this.updateGlobalState}
               />
               <div className="footer">
                 <img
@@ -181,6 +187,7 @@ class App extends Component {
                 />
               </div>
           </main>
+          </ErrorBoundary>
         </div>
       );
     }
