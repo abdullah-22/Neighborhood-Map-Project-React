@@ -1,16 +1,17 @@
 # Project # 05: Neighborhood Map Project (React)
 
 
-This is the fifth project of  _**[Udacity Full Stack Web Developer Nanodegree Program](https://classroom.udacity.com/nanodegrees/nd004/)**_  .
+This is the fifth project of  _**[Udacity Full Stack Web Developer Nanodegree Program](https://classroom.udacity.com/nanodegrees/nd004/)**_.
 
 ### Summary
 
 -   *An app that renders the map of a specified neighborhood and pin few locations with details.*
 -   *It is a single page web application created using the famous Javascript library [React JS](https://reactjs.org/).*
 -   *Uses [Google Maps API](https://cloud.google.com/maps-platform/) to display the map.*
--  *Uses [React Google Maps](https://tomchentw.github.io/react-google-maps/) package to render the Map & its components .*
+-  *Uses [React Google Maps](https://tomchentw.github.io/react-google-maps/) package to render the Map & its components.*
 -   *Uses [Foursquare API](https://developer.foursquare.com/) to get the data of listed venues.*
 -   *Uses [Axios](https://github.com/axios/axios) library to fetch the data from Foursquare*
+-   ***See the live app [here](https://abdullah-22.github.io/Neighborhood-Map-Project-React/)***
 
 ## Introduction
 This project requires students to build a fully front ended web app using [React JS](https://reactjs.org/) - *a Javascipt library* - that displays the map of a neighborhood pins specific locations / venues. The app should:
