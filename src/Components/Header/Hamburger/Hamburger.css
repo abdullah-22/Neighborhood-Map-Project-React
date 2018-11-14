@@ -1,0 +1,15 @@
+.hamburger-container {
+  width: fit-content;
+  height: fit-content;
+}
+span.hamburger-inner,
+span.hamburger-inner::after,
+span.hamburger-inner::before {
+  background-color: white;
+}
+
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::after,
+.hamburger.is-active .hamburger-inner::before {
+  background-color: white;
+}

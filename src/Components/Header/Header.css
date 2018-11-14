@@ -1,0 +1,25 @@
+.header {
+  display: flex;
+  align-items: center;
+  height: 4rem;
+  width: 100%;
+  padding: 0rem;
+  background-color: purple;
+  text-align: center;
+}
+
+.title {
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.header h1 {
+  font-weight: 500;
+  color: white;
+}
+
+@media screen and (max-width: 576px) {
+  .header {
+    height: 3rem;
+  }
+}

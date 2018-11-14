@@ -1,0 +1,13 @@
+.map-container {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.loading-element {
+  height: 100%;
+}
+
+.map-element {
+  height: 100%;
+}

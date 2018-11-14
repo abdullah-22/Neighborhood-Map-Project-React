@@ -1,0 +1,29 @@
+.error-page {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.error {
+  display: block;
+  height: fit-content;
+  width: fit-content;
+  text-align: center;
+  background-color: purple;
+  color: white;
+  box-shadow: 1px 1px 15px 5px purple;
+  padding: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .error-page {
+    display: block;
+    height: max-content;
+  }
+  .error {
+    width: fit-content;
+    margin: 2rem auto 0 auto;
+  }
+}

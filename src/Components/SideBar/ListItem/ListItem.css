@@ -1,0 +1,36 @@
+li {
+  list-style: none;
+  margin-top: 1rem;
+  cursor: pointer;
+  box-shadow: 1px 1px 10px 1px purple;
+}
+
+.list-item {
+  display: flex;
+  flex-flow: row;
+  padding: 0rem 0.5rem 0rem 0.5rem;
+  justify-content: left;
+  align-items: center;
+  background-color: purple;
+  color: white;
+}
+
+.list-item img {
+  display: inline;
+  margin-right: 0.5rem;
+}
+
+.list-item p {
+  display: inline;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 576px) {
+  .list-item p {
+    font-size: 0.7rem;
+  }
+  .list-item img {
+    display: none;
+  }
+}

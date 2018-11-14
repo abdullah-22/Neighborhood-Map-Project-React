@@ -1,0 +1,41 @@
+.sidebar-container {
+  display: block;
+  height: 100%;
+  width: 40%;
+  float: left;
+}
+
+.sidebar-menu {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  width: 100%;
+  overflow: scroll;
+}
+
+.search-box {
+  display: inline-block;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+#search {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid purple;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.attribution {
+  display: block;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar-container {
+    width: 80%;
+  }
+}
+
