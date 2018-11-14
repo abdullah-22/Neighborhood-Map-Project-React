@@ -144,7 +144,10 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 ## Miscellaneous
 
-*  ***This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).***
+* Credentials for the Google Map API can be replaced/changed in `line: 21` of `/src/Components/Map/Map.js`.
+* Credentials for the Foursquare API can be replaced/changed in `lines: 16, 17, 18` of `/src/Components/API/FourSquare.js`.
+* Query parameters for the obtaining initial locations can be modified in `lines: 26, 27, 28` of `/src/App.js`.
+* This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 * Venue details including photos are obtained from [Foursquare](https://developer.foursquare.com/).
 * All the media (including images, links, videos) used in this website may subject to copyrights of the respective owners.
 * These are used for educational purpose only and not for any commercial use.
