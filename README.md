@@ -156,6 +156,7 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 * [How to update parent's state from child](https://stackoverflow.com/questions/35537229/how-to-update-parents-state-in-react)
 * [This github respository](https://github.com/Jlevett/Neighborhood-Map-React)
 * [Deploying to GitHub pages](https://codeburst.io/deploy-react-to-github-pages-to-create-an-amazing-website-42d8b09cd4d)
+* [Error handling in React 16 using Error Boundaries](https://scotch.io/tutorials/error-handling-in-react-16-using-error-boundaries)
 
 _(stuck at someplace? found any error? or just want to connect? see below :))_
 
