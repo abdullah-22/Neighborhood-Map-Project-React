@@ -35,7 +35,6 @@ Following is the top level structure for the project directory.
 *(Explore the default folder structure for create-react-app [here](https://facebook.github.io/create-react-app/docs/folder-structure))*
 ```
 Neighborhood-Map-Project-React
-├── node_modules/
 ├── public/
 |		└── favicon.ico
 |		└── index.html
@@ -61,7 +60,6 @@ Neighborhood-Map-Project-React
 └── README.md
 ```
 ### Description
-* `node_modules` - contains all the dependency modules of *create-react-app* installed by default. *(by default)*
 * `public` - contains the core HTML file. *(by default)*
 * `src` - contains the main *app* component, other sub-components, APIs and  media files (if any). *(discussed below)*
 * `README.md` - That's me :')
