@@ -8,10 +8,11 @@ This is the fifth project of  _**[Udacity Full Stack Web Developer Nanodegree Pr
 -   *An app that renders the map of a specified neighborhood and pin few locations with details.*
 -   *It is a single page web application created using the famous Javascript library [React JS](https://reactjs.org/).*
 -   *Uses [Google Maps API](https://cloud.google.com/maps-platform/) to display the map.*
--  *Uses [React Google Maps](https://tomchentw.github.io/react-google-maps/) package to render the Map & its components.*
+-   *Uses [React Google Maps](https://tomchentw.github.io/react-google-maps/) package to render the Map & its components.*
 -   *Uses [Foursquare API](https://developer.foursquare.com/) to get the data of listed venues.*
 -   *Uses [Axios](https://github.com/axios/axios) library to fetch the data from Foursquare*
--   ***See the live app [here](https://abdullah-22.github.io/Neighborhood-Map-Project-React/)***
+
+***See the live app [here](https://abdullah-22.github.io/Neighborhood-Map-Project-React/)***
 
 ## Introduction
 This project requires students to build a fully front ended web app using [React JS](https://reactjs.org/) - *a Javascipt library* - that displays the map of a neighborhood pins specific locations / venues. The app should:
@@ -87,17 +88,11 @@ Neighborhood-Map-Project-React ────────────
 *  `ErrorBoundary` - wrapper around the sub-components, provides a fallback UI for handling errors that occur within its child components. *([see details](https://reactjs.org/docs/error-boundaries.html))*
 * `Header` - contains an animated *hamburger icon* that toggles the SideBar open when clicked, and the title for app.
 * `Main` - flex box container of SideBar, Map & Footer.
-* `SideBar` - contains the list-view of interactive venue items which can be filtered dynamically using the input search field.
+* `SideBar` - contains the list-view of responsive & interactive venue items which can be filtered dynamically using the input search field. It renders displayed on larger screens while hidden on smaller and can be toggle using the hamburger icon. 
 * `Map`- wrapper around the Google Map, markers and infoWindow
 * `Footer` - contains attribution for any third-party
-
-
-
-
-
-
+* `serviceWorker` - is pre-loaded by the create-react-app, it can be registered or unregistered from the `line: 16` of `/src/index.js`
 ## Try by yourself
-
 
 Download or clone the master branch to your PC.
 ### Available Scripts
